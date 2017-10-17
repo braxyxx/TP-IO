@@ -46,7 +46,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#Files en iml
-.iml
-.class
+TP IO.iml
+out
 .idea
+Exercice01.iml
+Exercice02.iml
+Exercice03.iml
+Exercice04.iml
+Exercice05.iml
+Exercice06.iml
+Exercice07.iml

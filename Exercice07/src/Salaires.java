@@ -1,9 +1,15 @@
-
-
 import domain.*;
-import service.Personnel;
+import service.*;
+
+import java.util.Scanner;
+
 
 public class Salaires {
+
+    private static Scanner sc = new Scanner(System.in);
+    public static Menu menu = new Menu();
+    public static boolean quit = false;
+
     public static void main(String[] args) {
 
         Personnel p = new Personnel();
@@ -20,5 +26,20 @@ public class Salaires {
                 "Le salaire moyen dans l'entreprise est de %.2f francs.",
                 p.salaireMoyen()
         ));
+    }
+
+    public static void luncher (Personnel p){
+        String saisie ="";
+        while (!quit){ //initialiser a false
+            saisie = sc.nextLine();
+            menu.displayMenu();
+            switch (saisie.toLowerCase()){
+                case "q" :
+                    quit = true; //sortie du menu
+                    break;
+                case "s" :
+                    p.ajouterEmploye();
+            }
+        }
     }
 }
