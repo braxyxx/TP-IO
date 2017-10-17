@@ -9,6 +9,7 @@ public class Salaires {
     private static Scanner sc = new Scanner(System.in);
     public static Menu menu = new Menu();
     public static boolean quit = false;
+    public static Wizard wizard = new Wizard();
 
     public static void main(String[] args) {
 
@@ -38,7 +39,13 @@ public class Salaires {
                     quit = true; //sortie du menu
                     break;
                 case "s" :
-                    p.ajouterEmploye();
+                    //p.ajouterEmploye(wizard.actionWizard()); //Envoit vers le menu Wizard
+                    break;
+                case "c":
+                    p.afficherSalaires();
+                    break;
+                default:
+                    System.out.println("Erreur mauvais choix");
             }
         }
     }
