@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Exercice06 {
 
-    public static Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args){
 
@@ -23,7 +23,7 @@ public class Exercice06 {
             //Récupere l'image via URL
             BufferedImage imgURL =  ImageIO.read(new URL(url));
             //Ajout image dans support
-            ImageIO.write(imgURL, "jpg", new File("C:\\Users\\Nathan\\Documents\\Ynov\\B2\\Java\\TP IO\\Exercice06\\support\\"+name+".jpg"));
+            ImageIO.write(imgURL, "jpg", new File("./Exercice06/support/"+name+".jpg"));
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -9,9 +9,9 @@ import java.io.FileNotFoundException;
 
 public class Exercice04 {
 
-    public static Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
-    public static File file = new File("./Exercice04/support/exo.txt");
+    private static File file = new File("./Exercice04/support/exo.txt");
 
 
     public static void main(String[] args) {
@@ -22,7 +22,8 @@ public class Exercice04 {
             saisie = sc.nextLine();
 
             if (!saisie.equals("quit")){
-                try(FileWriter writer = new FileWriter(file,true);) {
+                //ecrire la saisie dans le "writer"
+                try(FileWriter writer = new FileWriter(file,true)) {
                     saisie = saisie + "\n";
                     writer.write(saisie);
                 } catch(FileNotFoundException e){

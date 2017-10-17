@@ -5,25 +5,31 @@ import java.io.*;
 public class Exercice05 {
     public static void main(String[] args)  {
 
+        //Fichier d'entré et de sortie
         String in_File="./Exercice05/support/fichier1.txt";
         String out_File="./Exercice05/support/fichier2.txt";
 
-        InputStreamReader file = new InputStreamReader(Exercice05.class.getResourceAsStream(in_File));
+        //Assigne fichier correspondant
+        File fileSource = new File(in_File);
+        File fileDest = new File(out_File);
 
-        BufferedReader readFile = new BufferedReader(file);
-
-
+        //Lire le fichier "reader" et ecrire dans celui de "writer"
         try {
-            FileWriter writeFile = new FileWriter(new File(out_File));
-            while (readFile.ready()){
-                writeFile.write(readFile.readLine());
+            BufferedReader reader = new BufferedReader(new FileReader(fileSource));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileDest));
+            String line;
+            //ecrit s'il y a qqchose
+            while (null != (line = reader.readLine())){
+                writer.write(line);
+                writer.newLine();
             }
-        } catch (FileNotFoundException e){
+            //ferme les flux
+            reader.close();
+            writer.close();
+        }catch (FileNotFoundException e){
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (IOException e){
             e.printStackTrace();
         }
-
-
-    }
+            }
 }
