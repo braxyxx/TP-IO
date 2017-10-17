@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exercice01/Exercice01.iml" filepath="$PROJECT_DIR$/Exercice01/Exercice01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exercice02/Exercice02.iml" filepath="$PROJECT_DIR$/Exercice02/Exercice02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice03/Exercice03.iml" filepath="$PROJECT_DIR$/Exercice03/Exercice03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice04/Exercice04.iml" filepath="$PROJECT_DIR$/Exercice04/Exercice04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice05/Exercice05.iml" filepath="$PROJECT_DIR$/Exercice05/Exercice05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercice06/Exercice06.iml" filepath="$PROJECT_DIR$/Exercice06/Exercice06.iml" />
       <module fileurl="file://$PROJECT_DIR$/TP IO.iml" filepath="$PROJECT_DIR$/TP IO.iml" />
     </modules>
   </component>
